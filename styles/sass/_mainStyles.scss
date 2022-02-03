@@ -27,6 +27,28 @@ img {
     flex-direction: column;
     justify-content: center;
     align-items:center;
-    width:30%;
+    width:20%;
 }
+
+.project {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.projItem {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+.projItem ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    width:30%; 
+}
+
 
