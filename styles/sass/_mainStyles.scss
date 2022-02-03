@@ -14,3 +14,19 @@ img {
     justify-content: center;
 }
 
+.allSkills {
+    display: flex;
+    background-color: rgb(44, 41, 41);
+    width: 100%;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.skills ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    width:30%;
+}
+
