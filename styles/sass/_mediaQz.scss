@@ -39,4 +39,16 @@
         display: flex;
         flex-direction: column;
     }
+
+    .projects, .projItemRow1, .projItemRow2, .projectBox {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+    }
+    .contact {
+        width: 100%;
+        margin: 0 auto;
+    }
 }
+

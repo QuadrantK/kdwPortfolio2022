@@ -652,4 +652,21 @@ span {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+
+  .projects, .projItemRow1, .projItemRow2, .projectBox {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .contact {
+    width: 100%;
+    margin: 0 auto;
+  }
 }
