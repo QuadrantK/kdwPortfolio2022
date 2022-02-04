@@ -1,0 +1,42 @@
+@media(max-width: 900px) {
+    .allSkills {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: rgb(44, 41, 41);
+        width: 100%;
+        justify-content: space-evenly;
+        margin: 0 auto;
+        color: white;
+    }
+}
+
+@media(max-width: 720px) {
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 100px;
+    }
+    nav ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        text-decoration: none;
+        justify-content: space-between;
+            li {
+                justify-content: space-between;
+                margin: 20px;
+                
+            }
+    }
+    .landingPage {
+        padding-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .landingContentBox {
+        display: flex;
+        flex-direction: column;
+    }
+}
