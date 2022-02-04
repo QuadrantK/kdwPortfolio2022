@@ -1,21 +1,23 @@
 // font-family: 'IBM Plex Sans Condensed', sans-serif;
 // font-family: 'Righteous', cursive;
-
+$red:#fc6262;
 
 // Gen Typography
 html {
     font-size: 125%;
     font-family: 'IBM Plex Sans Condensed', sans-serif;
-    color: #fc6262;
+    color: $red;
     line-height: 1.5;
 }
 
-nav, h1, h2 h3 {
-    font-family: 'Righteous', cursive;;
-}
+nav, h1, h2, h3, a {
+    font-family: 'Righteous', cursive;
+    }
 
-h2 {
+h2, a {
     padding: 30px 0;
+    text-transform: uppercase;
+    text-align: center;
 }
 
 nav ul {
@@ -38,11 +40,24 @@ nav ul {
 
 a {
     text-decoration: none;
-    color: #fc6262;
+    color: $red;
+}
+
+a:hover, a:focus{
+    color: white;
 }
 
 .landingContentBox {
     text-align: right;
     // margin: 5%;
     align-items: center;
+}
+
+i{
+    color: white;
+    font-size: 4rem;
+}
+
+i:hover, i:focus{
+    color: $red;
 }

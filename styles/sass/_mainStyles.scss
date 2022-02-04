@@ -14,13 +14,56 @@ img {
 .landingPage {
     display: flex;
     justify-content: space-around;
+    width: 100%;
 }
 
+.contactIcons {
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+        a {
+            justify-content: space-around;
+            list-style-type: none;
+            // margin: 20px;
+            text-decoration: none;
+            
+        }
+}
+
+.contLink i {
+    font-size: 5rem;
+    list-style: none;
+    text-decoration: none;
+    }
+
+span {
+    margin-left: 20px;
+}
+
+// About Section**************************************
+
+.aboutSubWrapper {
+    width:55%;
+    margin: 30px auto;
+}
+
+.aboutSubWrapper p {
+    letter-spacing: 1.5px;
+}
+
+// Skills Section*************************************
 .allSkills {
     display: flex;
     background-color: rgb(44, 41, 41);
     width: 100%;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    margin: 0 auto;
     color: white;
 }
 
@@ -31,7 +74,7 @@ img {
     align-items:center;
     width:20%;
 }
-// 
+// PROJECTS*************************************
 .projects {
     display: flex;
     flex-direction: column;
@@ -44,6 +87,15 @@ img {
 //     margin: 0 auto;
 // }
 
+.headerK h1 {
+    position: relative;
+}
+
+.blink {
+    position: absolute;
+    right: 260px;
+    z-index: 10;
+}
 
 .projItemRow1, .projItemRow2 {
     display: flex;
@@ -75,6 +127,9 @@ img {
     // border: brown 1px solid;
     width: 80%;
     text-align: center;
+    p {
+        letter-spacing: 1.5px;
+    }
 
 }
 
