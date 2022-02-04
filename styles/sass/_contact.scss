@@ -1,0 +1,55 @@
+// FORM ******************
+.contactForm {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    button {
+        margin: 20px;
+        background-color: black;
+        color: white;
+        //  box-shadow: 2px 2px 1px #333;
+        //  cursor: pointer;
+    }
+    button:hover {
+        color: red;
+        background-color: white;
+        cursor: pointer;
+    }
+}
+.form {
+    text-align: center;
+    margin: 50px;
+}
+.form h3 {
+    text-align: left;
+    font-size: 3rem;
+    // text-shadow: 2px 2px 1px $bubble;
+}
+.groupForm {
+    display: flex;
+    flex-direction: column;
+    label {
+        text-transform: uppercase;
+        //  font-family: $baseFont;
+        //  color: $blueGreen;
+        //  letter-spacing: 1.5px;
+        //  padding: 10px;
+        text-align: center;
+        //  text-shadow: 2px 2px 1px #333;
+    }
+    input {
+        border: 1px solid red;
+        background-color: transparent;
+        color: white;
+        text-align: left;
+        //  box-shadow: 2px 2px 1px #333;
+    }
+    .message {
+        border: 1px solid red;
+        background-color: transparent;
+        color: white;
+        //  box-shadow: 2px 2px 1px #333;
+        resize: none;
+        margin-bottom: 25px;
+    }
+}

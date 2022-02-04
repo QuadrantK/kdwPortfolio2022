@@ -231,6 +231,7 @@ html {
   font-size: 125%;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   color: #fc6262;
+  line-height: 1.5;
 }
 
 nav, h1, h2 h3 {
@@ -241,7 +242,7 @@ h2 {
   padding: 30px 0;
 }
 
-nav li, li {
+nav ul {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -251,6 +252,19 @@ nav li, li {
       -ms-flex-direction: row;
           flex-direction: row;
   text-decoration: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+nav ul li {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+}
+
+.skills li {
+  list-style-type: none;
 }
 
 a {
@@ -293,9 +307,8 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .allSkills {
@@ -364,11 +377,15 @@ img {
   margin: 0 auto;
 }
 
-.projItem1, .projItem2 {
+.projItem1 {
+  text-align: right;
+}
+
+.projItem2 {
   text-align: left;
 }
 
-.projItem1 ul, .projItem2 ul {
+.projectBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -376,12 +393,15 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 0 0;
+  margin: 20px 40px;
+  width: 80%;
+  text-align: center;
 }
 
 .projects a {
-  text-align: right;
+  text-align: center;
   padding-top: 20px;
+  font-weight: bold;
 }
 
 i {
@@ -392,4 +412,98 @@ i {
 
 footer p {
   text-align: center;
+}
+
+.contactForm {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%;
+}
+.contactForm button {
+  margin: 20px;
+  background-color: black;
+  color: white;
+}
+.contactForm button:hover {
+  color: red;
+  background-color: white;
+  cursor: pointer;
+}
+
+.form {
+  text-align: center;
+  margin: 50px;
+}
+
+.form h3 {
+  text-align: left;
+  font-size: 3rem;
+}
+
+.groupForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.groupForm label {
+  text-transform: uppercase;
+  text-align: center;
+}
+.groupForm input {
+  border: 1px solid red;
+  background-color: transparent;
+  color: white;
+  text-align: left;
+}
+.groupForm .message {
+  border: 1px solid red;
+  background-color: transparent;
+  color: white;
+  resize: none;
+  margin-bottom: 25px;
+}
+
+.blink {
+  width: 220px;
+  height: 50px;
+  background-color: black;
+  padding: 10px;
+  text-align: center;
+  line-height: 50px;
+}
+
+span {
+  font-size: 3rem;
+  font-family: "Righteous", cursive;
+  color: #fc6262;
+  -webkit-animation: blink 2s linear infinite;
+          animation: blink 2s linear infinite;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }

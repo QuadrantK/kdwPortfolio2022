@@ -1,17 +1,19 @@
+
 .myPic {
+    // display: flex;
     width: 40%;
+    // align-items: right;
 }
 
 img {
     width: 80%;
     height: auto;
     border-radius: 50%;
-
 }
 
 .landingPage {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 
 .allSkills {
@@ -57,26 +59,29 @@ img {
     margin: 0 auto;
 }
 
-.projItem1, .projItem2 {
-    text-align: left;
+.projItem1 {
+    text-align: right;
 
 }
 
+.projItem2 {
+    text-align: left;
+}
 
-.projItem1 ul, .projItem2 ul {
+.projectBox {
     display: flex;
     flex-direction: column;
-    // justify-content: center;
-    // align-items: center;
-    // width: 50%;
-    
-    // border: brown solid 1px;
-    margin: 0 0;
+    margin: 20px 40px;
+    // border: brown 1px solid;
+    width: 80%;
+    text-align: center;
+
 }
 
 .projects a {
-    text-align: right;
+    text-align: center;
     padding-top: 20px;
+    font-weight: bold;
 }
 
 i {
@@ -84,4 +89,8 @@ i {
     align-self: center;
 }
 
-
+// .nameEmailBox {
+//     display: flex;
+//     flex-direction: row;
+    
+// }
