@@ -37,14 +37,14 @@ img {
 }
 
 .contLink i {
-    font-size: 5rem;
+    font-size: 3rem;
     list-style: none;
     text-decoration: none;
     }
 
-span {
-    margin-left: 20px;
-}
+// span {
+//     margin-left: 20px;
+// }
 
 // About Section**************************************
 
@@ -67,13 +67,20 @@ span {
     color: white;
 }
 
-.skills ul {
+.skills  {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:center;
-    width:20%;
+    align-items: center;
+    text-align: center;
+    padding-top: 10px;
+        ul {
+            margin: 0;
+            padding: 0;
+        } 
 }
+
+
 // PROJECTS*************************************
 .projects {
     display: flex;
@@ -89,18 +96,26 @@ span {
 
 .headerK h1 {
     position: relative;
+    text-align: right;
 }
 
 .blink {
     position: absolute;
-    right: 260px;
+    right: 250px;
     z-index: 10;
+    margin-right: 5px;
+}
+
+.projBox {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
 }
 
 .projItemRow1, .projItemRow2 {
     display: flex;
-    flex-direction: row;
-    width: 100%;
+    flex-direction: column;
+    width: 50%;
 }
 
 .projItem {
@@ -142,6 +157,15 @@ span {
 i {
     padding: 20px 0;
     align-self: center;
+}
+
+input, textarea {
+    margin-top: 10px;
+    padding: 1em 1.5em;
+}
+
+input {
+    margin-bottom: 10px;
 }
 
 // .nameEmailBox {

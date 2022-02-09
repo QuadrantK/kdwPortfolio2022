@@ -108,60 +108,62 @@
         <!-- Projects -->
 
 
-        <section class="projects wrapper" id="projects">
+        <section class=" wrapper" id="projects">
                 <h2>Projects</h2>
-                <div class="projItemRow1">
-                    <div class="projItem1">
-                            <section class="projectBox">
-                                <a href="https://elegant-stonebraker-6d063f.netlify.app/" target="blank">Willow's Journey</a>
-                                <a href="https://elegant-stonebraker-6d063f.netlify.app/" target="blank"><i class="fas fa-leaf"></i></a>
-                                <p>A multi page PSD conversion for an influencer style website.</p>
-                            </section>
-                        </div>
-                        <div class="projItem2">
-                            <section class="projectBox">
-                                <a href="https://vigorous-thompson-3ab435.netlify.app/" target="blank">Can We Go To The Park Today?</a>
-                                <a href="https://vigorous-thompson-3ab435.netlify.app/" target="blank"><i class="fas fa-cloud-rain"></i></a>
-                                <p>A javascript single page app that let's the user enter their city to return live weather data for their city using an API.</p>
-                            </section>
-                        </div>
-                </div>
-                    <div class = "projItemRow2">
+                <div class="projBox">
+                    <div class="projItemRow1">
                         <div class="projItem1">
-                            <section class="projectBox">
-                                <a href="https://sad-kowalevski-ec69ca.netlify.app/" target="blank">Meowkipurdia</a>
-                                <a href="https://sad-kowalevski-ec69ca.netlify.app/" target="blank"></a><i class="fas fa-cat"></i></a>
-                                <p>A single page React app thats a resource for info on cat breeds. The dropdown list, info and images are dynamically populated by an API using an Ajax call.</p>
-                            </section>
-                        </div>
-                        <div class="projItem2">
-                            <section class="projectBox">
-                                <a href="https://daily-dad-jokes.netlify.app/" target="blank">Daily Dad Jokes</a>
-                                <a href="https://daily-dad-jokes.netlify.app/" target="blank"><i class="far fa-smile-wink"></i></a>
-                                <p>A React app that presents the user with a slideshow of animals and 10 data joke. The user can enter up to three of their own custom jokes. This app makes use of Axios calls to two different API and uses routing for navagation.</p>
-                            </section>
+                                <section class="projectBox">
+                                    <a href="https://elegant-stonebraker-6d063f.netlify.app/" target="blank">Willow's Journey</a>
+                                    <a href="https://elegant-stonebraker-6d063f.netlify.app/" target="blank"><i class="fas fa-leaf"></i></a>
+                                    <p>The objective of this .pdf conversion project is to convert a design provided by a client and code a  multi-page, functional, responsive website.</p>
+                                </section>
+                            </div>
+                            <div class="projItem2">
+                                <section class="projectBox">
+                                    <a href="https://vigorous-thompson-3ab435.netlify.app/" target="blank">Can We Go To The Park Today?</a>
+                                    <a href="https://vigorous-thompson-3ab435.netlify.app/" target="blank"><i class="fas fa-cloud-rain"></i></a>
+                                    <p>A javascript single page app that let's the user enter their city to return live weather data for their city using an API.</p>
+                                </section>
+                            </div>
+                    </div>
+                        <div class = "projItemRow2">
+                            <div class="projItem1">
+                                <section class="projectBox">
+                                    <a href="https://sad-kowalevski-ec69ca.netlify.app/" target="blank">Meowkipurdia</a>
+                                    <a href="https://sad-kowalevski-ec69ca.netlify.app/" target="blank"></a><i class="fas fa-cat"></i></a>
+                                    <p>A single page React app thats a resource for info on cat breeds. The dropdown list, info and images are dynamically populated by an API using an Ajax call.</p>
+                                </section>
+                            </div>
+                            <div class="projItem2">
+                                <section class="projectBox">
+                                    <a href="https://daily-dad-jokes.netlify.app/" target="blank">Daily Dad Jokes</a>
+                                    <a href="https://daily-dad-jokes.netlify.app/" target="blank"><i class="far fa-smile-wink"></i></a>
+                                    <p>A React app that presents the user with a slideshow of animals and 10 data joke. The user can enter up to three of their own custom jokes. This app makes use of Axios calls to two different API and uses routing for navagation.</p>
+                                </section>
+                            </div>
                         </div>
                     </div>
         </section>
-        <section class="contact" id="contact">
+        <section class="contact wrapper" id="contact">
             <h2>Contact</h2>
-            <div class="form wrapper">
+            <div class="form">
                 <form id="contactForm" class="contactForm" action="https://formspree.io/f/myyoedar"
                 method="POST" method="POST">
                     <div class="nameEmailBox">
                         <div class="groupForm">
                             <label class="formLabel" for="name">Name</label>
-                            <input id="name" class="field" type="text" required="">
+                            <input id="name" class="field" type="text" placeholder="First Name, Last Name" required="">
                         </div>
                         <div class="groupForm">
                             <label class="formLabel" for="email">Email</label>
-                            <input id="email" class="field" type="email" name="email" required="">
+                            <input id="email" class="field" type="email" name="email" required="" placeholder="Your Email@email.com!">
                         </div>
                     </div>
                         <div class="groupForm">
                             <label class="formLabel" for="message">Message</label>
                             <textarea id="message" class="message" name="message" cols="40"
-                            rows="15" required=""></textarea>
+                            rows="15" required="" placeholder="Your message to me!"></textarea>
                         </div>
                         <button class="link" type="submit">Send</button>
                 </form>

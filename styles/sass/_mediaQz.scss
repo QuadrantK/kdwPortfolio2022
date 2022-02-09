@@ -40,15 +40,33 @@
         flex-direction: column;
     }
 
-    .projects, .projItemRow1, .projItemRow2, .projectBox {
+    .projects, .projItemRow1, .projItemRow2, .projBox {
         display: flex;
         flex-direction: column;
         width: 100%;
         margin: 0 auto;
     }
+
+    .aboutSubWrapper {
+        width: 100%;
+        margin: 30px auto;
+        text-align: justify;
+    }
+
     .contact {
         width: 100%;
         margin: 0 auto;
     }
+
+
 }
 
+@media(max-width: 580px) {
+    .landingPage {
+        margin: 0 auto;
+    }
+
+    .myPic {
+        padding-top: 50px;
+    }
+}

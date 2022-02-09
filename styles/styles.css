@@ -234,8 +234,13 @@ html {
   line-height: 1.5;
 }
 
+.headerK {
+  text-align: justify;
+}
+
 nav, h1, h2, h3, a {
   font-family: "Righteous", cursive;
+  text-align: center;
 }
 
 h2, a {
@@ -265,6 +270,10 @@ nav ul li {
   margin: 20px;
 }
 
+.about {
+  text-align: justify;
+}
+
 .skills li {
   list-style-type: none;
 }
@@ -287,11 +296,49 @@ a:hover, a:focus {
 
 i {
   color: white;
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 
 i:hover, i:focus {
   color: #fc6262;
+}
+
+.form {
+  margin: 0 auto;
+}
+
+.groupForm {
+  text-align: center;
+}
+.groupForm input::-webkit-input-placeholder {
+  text-align: center;
+}
+.groupForm input::-moz-placeholder {
+  text-align: center;
+}
+.groupForm input:-ms-input-placeholder {
+  text-align: center;
+}
+.groupForm input::-ms-input-placeholder {
+  text-align: center;
+}
+.groupForm input::placeholder {
+  text-align: center;
+}
+.groupForm textarea::-webkit-input-placeholder {
+  text-align: center;
+}
+.groupForm textarea::-moz-placeholder {
+  text-align: center;
+}
+.groupForm textarea:-ms-input-placeholder {
+  text-align: center;
+}
+.groupForm textarea::-ms-input-placeholder {
+  text-align: center;
+}
+.groupForm textarea::placeholder {
+  text-align: center;
 }
 
 header {
@@ -304,8 +351,17 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .myPic {
@@ -353,13 +409,9 @@ img {
 }
 
 .contLink i {
-  font-size: 5rem;
+  font-size: 3rem;
   list-style: none;
   text-decoration: none;
-}
-
-span {
-  margin-left: 20px;
 }
 
 .aboutSubWrapper {
@@ -384,7 +436,7 @@ span {
   color: white;
 }
 
-.skills ul {
+.skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -398,7 +450,12 @@ span {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 20%;
+  text-align: center;
+  padding-top: 10px;
+}
+.skills ul {
+  margin: 0;
+  padding: 0;
 }
 
 .projects {
@@ -416,15 +473,17 @@ span {
 
 .headerK h1 {
   position: relative;
+  text-align: right;
 }
 
 .blink {
   position: absolute;
-  right: 260px;
+  right: 250px;
   z-index: 10;
+  margin-right: 5px;
 }
 
-.projItemRow1, .projItemRow2 {
+.projBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -432,7 +491,18 @@ span {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  width: 100%;
+  margin: 0 auto;
+}
+
+.projItemRow1, .projItemRow2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 50%;
 }
 
 .projItem {
@@ -483,6 +553,15 @@ i {
   padding: 20px 0;
   -ms-flex-item-align: center;
       align-self: center;
+}
+
+input, textarea {
+  margin-top: 10px;
+  padding: 1em 1.5em;
+}
+
+input {
+  margin-bottom: 10px;
 }
 
 footer p {
@@ -653,7 +732,7 @@ span {
             flex-direction: column;
   }
 
-  .projects, .projItemRow1, .projItemRow2, .projectBox {
+  .projects, .projItemRow1, .projItemRow2, .projBox {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -665,8 +744,23 @@ span {
     margin: 0 auto;
   }
 
+  .aboutSubWrapper {
+    width: 100%;
+    margin: 30px auto;
+    text-align: justify;
+  }
+
   .contact {
     width: 100%;
     margin: 0 auto;
+  }
+}
+@media (max-width: 580px) {
+  .landingPage {
+    margin: 0 auto;
+  }
+
+  .myPic {
+    padding-top: 50px;
   }
 }
